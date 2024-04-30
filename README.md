@@ -72,7 +72,7 @@ if __name__ == "__main__":
 
 # Phase 5
 
-Opening the `phase_5` function, I immediately saw the another do-while loop and begin examining there. I was unfamiliar with the C syntax for the `local_18` assignment, so I had ChatGPT explain it; the assignment was finding the value in `array.3472` at index `local_18 * 4`. Every time this loop iterated, it would use the array value from the last iteration,  `local_18`, multiplied by four, to assign a new value to `local_18`.  It would also add the value of `local_18` to `iVar1`. Only if `iVar2` equaled 15 and the second input, `local_14`, was equal to `iVar1` would the phase be defused. I was struggling with gdb to debug the execution, so I created a brute force Python script to help me. The input to defuse this phase was `5 115`.
+Opening the `phase_5` function, I immediately saw the another do-while loop and begin examining there. I was unfamiliar with the C syntax for the `local_18` assignment, so I had ChatGPT explain it; the assignment was finding the value in `array.3472` at index `local_18 * 4`. Every time this loop iterated, it would use the array value from the last iteration,  `local_18`, multiplied by four, to assign a new value to `local_18`.  It would also add the value of `local_18` to `iVar1`. Only if `iVar2` equaled 15 and the second input, `local_14`, was equal to `iVar1` would the phase be defused. I was struggling to debug the execution with gdb, so I created a brute force Python script to help me. The input to defuse this phase was `5 115`.
 
 ```c
 do {
@@ -84,4 +84,4 @@ do {
 
 # Phase 6
 
-Similar to the last phase, I was very lost. Ultimately, I used the brute force script I wrote in the last phase to find the input to defuse this phase. The input to defuse this phase was `4 5 1 6 3 2`.
+Similar to the last phase, I was struggling to debug the execution. I noticed the `reac_six_numbers` function, so I knew there would be six inputs integer inputs. Ultimately, I used the brute force script I wrote in the last phase to find the input to defuse this phase. The input to defuse this phase was `4 5 1 6 3 2`.
