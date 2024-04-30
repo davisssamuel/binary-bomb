@@ -4,7 +4,7 @@ import subprocess
 
 def main():
     start_time = perf_counter()
-    perm_set = product(range(0,9), repeat=6)
+    perm_set = product(range(0,10), repeat=6)
     for permutation in perm_set:
         new_input = ""
         for num in permutation:
