@@ -84,4 +84,4 @@ do {
 
 # Phase 6
 
-Similar to the last phase, I was struggling to debug the execution. I noticed the `read_six_numbers` function, so I knew there would be six inputs integer inputs. Ultimately, I used the brute force script I wrote in the last phase to find the input to defuse this phase. The input to defuse this phase was `4 5 1 6 3 2`.
+Similar to the last phase, I was struggling to debug the execution. I noticed the `read_six_numbers` function, so I knew there would be six integer inputs. Ultimately, I used the brute force script I wrote in the last phase to find the input to defuse this phase. The input to defuse this phase was `4 5 1 6 3 2`.
