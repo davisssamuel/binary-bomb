@@ -78,7 +78,7 @@ Opening the `phase_5` function, I immediately saw the another do-while loop and 
 do {
 	iVar2 = iVar2 + 1;
 	local_18 = *(uint *)(array.3472 + (long)(int)local_18 * 4);
-    iVar1 = iVar1 + local_18;
+	iVar1 = iVar1 + local_18;
 } while (local_18 != 0xf);
 ```
 
