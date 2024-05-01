@@ -50,24 +50,20 @@ Opening the `phase_4` function, I immediately saw the function `func4` and knew 
 
 ```python
 def func4(param_1, param_2, param_3):
-	iVar1 = 0
-	iVar2 = (param_3 - param_2) / 2 + param_2
-	if (param_1 < iVar2):
-	    iVar1 = func4(param_1, param_2, iVar2 + -1)
-	    iVar2 = iVar2 + iVar1
-	elif (iVar2 < param_1):
-	    iVar1 = func4(param_1, (iVar2 + 1), param_3)
-	    iVar2 = iVar2 + iVar1
-	return iVar2
+  iVar1 = 0
+  iVar2 = (param_3 - param_2) / 2 + param_2
+  if (param_1 < iVar2):
+    iVar1 = func4(param_1, param_2, iVar2 + -1)
+    iVar2 = iVar2 + iVar1
+  elif (iVar2 < param_1):
+    iVar1 = func4(param_1, (iVar2 + 1), param_3)
+    iVar2 = iVar2 + iVar1
+  return iVar2
 
-def main():
-	x = 0
-	while func4(x, 0, 14) != 37:
-		x += 1
-	print(x)
-
-if __name__ == "__main__":
-	main()
+x = 0
+while func4(x, 0, 14) != 37:
+  x += 1
+print(x)
 ```
 
 # Phase 5
