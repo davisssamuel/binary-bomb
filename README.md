@@ -49,6 +49,8 @@ Finally, the second input is checked against `cVar1`. Based on case 0, the secon
 Opening the `phase_4` function, I immediately saw the function `func4` and knew it would be an integral part of defusing this phase. Examining `func4`, I saw the function was getting the midpoint between the last two parameters, in my case, 0 and 14, and then calling itself recursively based on if the midpoint was greater or less than the first parameter which is the first input, or `local_18`. Looking back at `phase_4`, I noticed `iVar1` is set to the output of `func4`. The function then checks if `iVar 1` and the second input, `local_14`, is equal to 37. I figured the easiest way to determine what the first input should be was to recreate the function in Python and the iterate through inputs until I received a 37. The full input was `10 37`.
 
 ```python
+# func4.py
+
 def func4(param_1, param_2, param_3):
   iVar1 = 0
   iVar2 = (param_3 - param_2) / 2 + param_2
