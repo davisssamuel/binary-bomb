@@ -62,10 +62,11 @@ def func4(param_1, param_2, param_3):
     iVar2 = iVar2 + iVar1
   return iVar2
 
-x = 0
-while func4(x, 0, 14) != 37:
-  x += 1
-print(x)
+if __name__ == "__main__":
+  x = 0
+  while func4(x, 0, 14) != 37:
+    x += 1
+  print(x)
 ```
 
 # Phase 5
