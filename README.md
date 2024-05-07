@@ -8,10 +8,10 @@ Opening the `phase_2` function I immediately saw the function `read_six_numbers`
 
 ```c
 do {
-	if (piVar1[1] != *piVar1 * 2) {
-		explode_bomb();
-	}
-	piVar1 = piVar1 + 1;
+  if (piVar1[1] != *piVar1 * 2) {
+    explode_bomb();
+  }
+  piVar1 = piVar1 + 1;
 } while (piVar1 != local_38 + 5);
 ```
 
@@ -19,10 +19,10 @@ Examining the following do-while loop, I noticed each iteration checked if `piVa
 
 ```c
 do {
-	if (piVar1[1] != *piVar1 * 2) {
-		explode_bomb();
-	}
-	piVar1 = piVar1 + 1;
+  if (piVar1[1] != *piVar1 * 2) {
+    explode_bomb();
+  }
+  piVar1 = piVar1 + 1;
 } while (piVar1 != local_38 + 5);
 ```
 
@@ -34,12 +34,12 @@ Opening the `phase_3` function I noticed the first conditional checked if the le
 
 ```c
 case 0:
-	cVar1 = 'z';
-	if (local_14 != 0xd0) {
-		explode_bomb();
-		cVar1 = 'z';
-    }
-    break;
+  cVar1 = 'z';
+  if (local_14 != 0xd0) {
+    explode_bomb();
+      cVar1 = 'z';
+  }
+  break;
 ```
 
 Finally, the second input is checked against `cVar1`. Based on case 0, the second input should be `z`. There are at least 8 successful inputs based on the 8 cases in the switch statement, but for case 0, the full input was `0 z 208`.
@@ -75,9 +75,9 @@ Opening the `phase_5` function, I immediately saw the another do-while loop and 
 
 ```c
 do {
-	iVar2 = iVar2 + 1;
-	local_18 = *(uint *)(array.3472 + (long)(int)local_18 * 4);
-	iVar1 = iVar1 + local_18;
+  iVar2 = iVar2 + 1;
+  local_18 = *(uint *)(array.3472 + (long)(int)local_18 * 4);
+  iVar1 = iVar1 + local_18;
 } while (local_18 != 0xf);
 ```
 
